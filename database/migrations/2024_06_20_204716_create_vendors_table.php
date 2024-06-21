@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('phone')->unique();
+            $table->string('phone')->nullable();
             $table->boolean('is_verified')->default(false);
-            $table->string('vendor_type')->nullable();
+            $table->enum('vendor_type', ['individual', 'organisation'])->default('individual');
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

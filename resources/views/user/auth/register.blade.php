@@ -48,7 +48,7 @@
 
                 <div class="mb-3">
                     <label class="fw-semibold" for="name">Full name</label>
-                    <input type="text" name="first_name" class="form-control border rounded-3 py-2 shadow-0"
+                    <input type="text" name="name" class="form-control border rounded-3 py-2 shadow-0"
                         id="name" placeholder="John Doe" value="{{ old('name') }}" required>
                 </div>
 
@@ -64,7 +64,7 @@
                         id="password" placeholder="********" value="{{ old('password') }}" required>
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-2">
                     <label class="fw-semibold" for="password_confirmation">Confirm password</label>
                     <input type="password" name="password_confirmation"
                         class="form-control border rounded-3 py-2 shadow-0" id="password_confirmation"
@@ -72,8 +72,8 @@
                 </div>
 
                 {{-- Form errors --}}
-                <div class="animated-2 fadeIn">
-                    @error('first_name')
+                <div class="animated-2 fadeIn mb-3">
+                    @error('name')
                         <x-typography.form-error :message="$message" />
                     @enderror
                     @error('last_name')

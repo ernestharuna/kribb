@@ -66,7 +66,7 @@
                         Hire a consultant <i class="bi bi-stars text-warning"></i>
                     </a>
                 </div>
-                <span src="{{ asset('images/owenabulb.png') }}" class="glow opacity-25">
+                <span src="{{ asset('images/owenabulb.png') }}" class="glow opacity-50">
                 </span>
 
             </div>

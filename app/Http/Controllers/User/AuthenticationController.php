@@ -16,11 +16,10 @@ class AuthenticationController extends Controller
     public function register(Request $request)
     {
         $data = $request->validate([
-            'name' => ['required', 'min:2', 'max:20', 'alpha'],
+            'name' => ['required', 'min:2', 'max:20'],
             'email' => ['required', 'email', Rule::unique('users', 'email')],
-            'password' => ['required', 'confirmed', Password::min(8)]
+            'password' => ['required', 'confirmed', Password::min(6)]
         ]);
-
         /**
          * Uppercase first letter of 
          * First and Last Name
@@ -41,6 +40,7 @@ class AuthenticationController extends Controller
             Auth::login($user);
             return redirect(route('user.dashboard'))->with('success', 'Welcome to Kribb! 🎉');
         } catch (\Exception $e) {
+            // dd($e->getMessage());
             return back()->with('error', $e->getMessage());
             throw $e;
         }
