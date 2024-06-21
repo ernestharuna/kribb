@@ -6,6 +6,14 @@ $font-family-sans-serif: 'Inter', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
+#flash-message {
+    position: fixed;
+    top: 20px;
+    width: max-content;
+    right: 20px;
+    z-index: 2000 !important;
+}
+
 .w-64 {
     max-width: 64rem;
     margin: 0 auto;

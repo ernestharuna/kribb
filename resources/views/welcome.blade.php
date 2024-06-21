@@ -2,7 +2,7 @@
     <div class="bg-primary bg-gradient pb-5">
         <nav class="navbar navbar-expand-lg py-4">
             <div class="container">
-                <a class="navbar-brand fw-bold text-warning" href="#">Kribb</a>
+                <a class="navbar-brand fw-bold text-warning" href="/">Kribb</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -37,10 +37,10 @@
                     <form class="d-flex" role="search">
                         <input class="form-control me-2 shadow-none rounded-5 bg-body-secondary border-0 fw-bolder"
                             type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-warning fw-bold px-4 rounded-5" type="submit"
-                            style="width: max-content">
+                        <a href="{{ route('user.register') }}" class="btn btn-warning fw-bold px-4 rounded-5"
+                            type="submit" style="width: max-content">
                             Register
-                        </button>
+                        </a>
                     </form>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 </p>
 
                 <div class="cta">
-                    <a href="#"
+                    <a href="{{ route('user.register') }}"
                         class='text-decoration-none btn btn-light rounded-5 fw-bold px-5 py-2 shadow text-primary d-md-inline-block d-block'>
                         Get started <i class="bi bi-arrow-right ms-1"></i>
                     </a>
@@ -202,7 +202,7 @@
             </div>
 
             <div class="cta">
-                <a href="#"
+                <a href="{{ route('user.register') }}"
                     class='text-decoration-none btn btn-light rounded-5 fw-bold px-5 py-2 shadow text-primary d-md-inline-block d-block'>
                     Get started <i class="bi bi-arrow-right ms-2"></i>
                 </a>

@@ -18,9 +18,8 @@
 </head>
 
 <body>
-    <main>
-        {{ $slot }}
-    </main>
+    {{ $slot }}
+    <x-typography.session />
 </body>
 
 </html>
