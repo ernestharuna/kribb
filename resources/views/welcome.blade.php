@@ -92,7 +92,7 @@
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-12">
-                        <button class="btn btn-primary w-100 py-md-4 py-3 fw-bold">
+                        <button class="btn btn-warning rounded-3 w-100 py-md-4 py-3 fs-5 fw-bold">
                             Search
                         </button>
                     </div>
